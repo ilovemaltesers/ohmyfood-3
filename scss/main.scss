@@ -1,0 +1,82 @@
+@import "./resets";
+@import "./variables";
+@import "./styles";
+
+// header
+
+.headerbox {
+  @include basic-header;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+// nav
+
+.navigationbox {
+  width: 100%;
+  height: auto;
+
+  .searchbox {
+    width: 100%;
+    padding-bottom: 1em;
+    background-color: $greytone;
+  }
+  .searchfield {
+    margin-top: 2em;
+    background-color: $greytone;
+    border: none;
+    outline: none;
+  }
+  .fa-solid {
+    padding-left: 129px;
+  }
+}
+
+// presentation
+
+.presentationbox {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  background-color: $greytonelgt;
+
+  .bookmenu {
+    font-family: $primary-font;
+    font-weight: map-get($font-weights, medium);
+    text-align: center;
+  }
+
+  .discover {
+    font-family: $primary-font;
+    font-weight: map-get($font-weights, xsmall);
+    text-align: center;
+    padding: 1em 1em 0 1em;
+  }
+}
+
+.purplebtn {
+  @include purplebtn;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 8em;
+}
+
+// How it works section
+
+.howbox {
+  width: 100%;
+  height: auto;
+
+  .howitworkstitle {
+    font-family: $primary-font;
+    font-weight: map-get($font-weights, medium);
+  }
+}
+
+.howbtnflexbox {
+  display: flex;
+  flex-direction: column;
+
+  .howbtn {
+    @include howbutton;
+  }
+}
