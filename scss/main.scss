@@ -85,8 +85,17 @@
   text-align: center;
   margin-top: 2em;
 
-  & .howbtn {
+  .howbtn {
     @include howbutton;
+    position: relative;
+  }
+
+  .numberbtn {
+    @include numberbtn;
+    z-index: 1;
+    position: absolute;
+    left: -9px;
+    text-align: center;
   }
 }
 
