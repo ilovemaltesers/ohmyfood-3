@@ -177,3 +177,8 @@
     font-size: x-large;
   }
 }
+// footer
+
+.footer {
+  @include footer;
+}

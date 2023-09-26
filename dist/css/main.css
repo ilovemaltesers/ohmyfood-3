@@ -188,4 +188,30 @@ body {
   padding-top: 14px;
   color: gray;
   font-size: x-large;
+}
+
+.footerbox {
+  background-color: rgb(67, 66, 66);
+  color: white;
+  margin-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.footerbox .footertitle {
+  font-family: "Shrikhand", sans-serif;
+  padding-top: 1em;
+}
+.footerbox .footerlist {
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.footerbox .footerlist .utensils {
+  color: white;
+}
+.footerbox .footerlist .handshake {
+  color: white;
+}
+.footerbox .footerlist .suggest {
+  padding-left: 5px;
 }/*# sourceMappingURL=main.css.map */

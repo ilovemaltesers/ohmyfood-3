@@ -47,3 +47,35 @@
   text-align: center;
   color: #3e9b83;
 }
+
+// footer
+
+@mixin footer {
+  .footerbox {
+    background-color: $footer;
+    color: white;
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    .footertitle {
+      font-family: $heading-font;
+      padding-top: 1em;
+    }
+    .footerlist {
+      list-style: none;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+      .utensils {
+        color: white;
+      }
+      .handshake {
+        color: white;
+      }
+      .suggest {
+        padding-left: 5px;
+      }
+    }
+  }
+}
