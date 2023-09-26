@@ -120,6 +120,7 @@
     border: none;
     border-radius: 25px;
     box-shadow: 0px 0px 10px 0px gray;
+    position: relative;
   }
 
   .imagewrap {
@@ -135,6 +136,13 @@
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+.newbutton {
+  @include newbtn;
+  z-index: 10;
+  position: absolute;
+  left: 13em;
+  bottom: 10.5em;
 }
 
 .imgfullpalette {

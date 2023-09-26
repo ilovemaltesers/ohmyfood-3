@@ -38,14 +38,19 @@
 }
 
 @mixin newbtn {
-  width: 5em;
-  height: 2em;
+  width: 77px;
+  height: 30px;
   border-radius: 5px;
   background-color: $tertiary-color;
   border: hidden;
   cursor: pointer;
   text-align: center;
   color: #3e9b83;
+  .newbuttontxt {
+    padding-top: 6px;
+    font-family: $primary-font;
+    font-style: bold;
+  }
 }
 
 // footer
@@ -57,25 +62,29 @@
     margin-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
+  }
 
-    .footertitle {
-      font-family: $heading-font;
-      padding-top: 1em;
-    }
-    .footerlist {
-      list-style: none;
-      padding-top: 1em;
-      padding-bottom: 1em;
+  .footertitle {
+    font-family: $heading-font;
+    padding-top: 1em;
+  }
+  .footerlist {
+    list-style: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 
-      .utensils {
-        color: white;
-      }
-      .handshake {
-        color: white;
-      }
-      .suggest {
-        padding-left: 5px;
-      }
-    }
+  .utensils {
+    color: white;
+  }
+  .handshake {
+    color: white;
+  }
+  .suggest {
+    padding-left: 5px;
+  }
+  .footerlink {
+    color: white;
+    text-decoration: none;
   }
 }
