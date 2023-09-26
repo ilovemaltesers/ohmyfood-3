@@ -136,7 +136,8 @@ body {
   height: 65%;
   overflow: hidden;
 }
-.restaurantsbox .rest_img {
+
+.rest_img {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -144,19 +145,23 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
-.restaurantsbox .imgfullpalette {
+
+.imgfullpalette {
   -o-object-position: 0px -45px;
      object-position: 0px -45px;
 }
-.restaurantsbox .imgenchanted {
+
+.imgenchanted {
   -o-object-position: 0px -131px;
      object-position: 0px -131px;
 }
-.restaurantsbox .imgbastille {
+
+.imgbastille {
   -o-object-position: 0px -37px;
      object-position: 0px -37px;
 }
-.restaurantsbox .imglegourmand {
+
+.imglegourmand {
   -o-object-position: 0px -41px;
      object-position: 0px -41px;
 }
@@ -166,6 +171,7 @@ body {
   flex-direction: column;
   padding-top: 1em;
   padding-left: 1em;
+  position: relative;
 }
 .resttextwrap .restname {
   font-family: "Roboto", sans-serif;
@@ -175,4 +181,11 @@ body {
   padding-top: 0.5em;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
+}
+.resttextwrap .hearticon {
+  position: absolute;
+  padding-left: 240px;
+  padding-top: 14px;
+  color: gray;
+  font-size: x-large;
 }/*# sourceMappingURL=main.css.map */
