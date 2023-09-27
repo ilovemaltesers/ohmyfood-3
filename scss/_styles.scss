@@ -8,6 +8,11 @@
   color: black;
   text-align: center;
   padding-top: 30px;
+  .arrowicon {
+    position: absolute;
+    right: 335px;
+    bottom: 11px;
+  }
 }
 
 //purplebutton
@@ -27,6 +32,7 @@
   &:hover {
     background: lighten(#ab71f0, 10%);
     background-color: lighten(#ab71f0, 10%);
+    box-shadow: 0px 4px 6px rgba(48, 44, 44, 0.6);
   }
 
   &:active {
@@ -68,6 +74,17 @@
     padding-top: 6px;
     font-family: $primary-font;
     font-style: bold;
+  }
+}
+
+// heart animation
+
+@keyframes heartfill {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #cb057f;
   }
 }
 

@@ -8,6 +8,7 @@
   @include basic-header;
   box-shadow: 0px 0px 10px 0px black;
   text-align: center;
+  position: relative;
 }
 
 // nav
@@ -187,14 +188,21 @@
     font-family: $primary-font;
     font-weight: map-get($font-weights, xsmall);
   }
+
   .hearticon {
     position: absolute;
     padding-left: 240px;
     padding-top: 14px;
     color: gray;
     font-size: x-large;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    &:hover {
+      animation: heartfill 3s linear;
+    }
   }
 }
+
 // footer
 
 .footer {
