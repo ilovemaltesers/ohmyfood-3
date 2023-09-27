@@ -69,8 +69,17 @@ body {
   border: hidden;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+.purplebtn:hover {
+  background: #c69ff5;
+  background-color: #c69ff5;
+}
+.purplebtn:active {
+  background: #c69ff5;
+  background-color: #e2cdfa;
 }
 
 .howbox {
@@ -120,6 +129,7 @@ body {
   width: 100%;
   background-color: rgb(241, 242, 243);
   margin-top: 2em;
+  padding-bottom: 2em;
 }
 .restaurantsbox .restaurantstitle {
   font-family: "Roboto", sans-serif;
