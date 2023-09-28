@@ -29,3 +29,24 @@ $breakpoints: (
   "desktop": 1366px,
   "LGdesktop": 1920px,
 );
+
+@mixin phonepb {
+  @media (min-width: map-get($breakpoints, "phone")) {
+    @content;
+  }
+}
+@mixin tabletpb {
+  @media (min-width: map-get($breakpoints, "tablet")) {
+    @content;
+  }
+}
+@mixin desktoppb {
+  @media (min-width: map-get($breakpoints, "desktop")) {
+    @content;
+  }
+}
+@mixin LGdesktoppb {
+  @media (min-width: map-get($breakpoints, "LGdesktop")) {
+    @content;
+  }
+}

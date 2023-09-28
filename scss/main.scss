@@ -188,17 +188,31 @@
     font-family: $primary-font;
     font-weight: map-get($font-weights, xsmall);
   }
+}
 
-  .hearticon {
-    position: absolute;
-    padding-left: 240px;
-    padding-top: 14px;
-    color: gray;
-    font-size: x-large;
-    background-color: transparent;
-    transition: background-color 0.5s ease;
-    &:hover {
-      animation: heartfill 3s linear;
+.heartsolid {
+  display: hidden;
+  padding-left: 240px;
+  padding-top: 14px;
+  color: linear-gradient(to bottom, #ff6b91, #cb057f);
+  font-size: x-large;
+  z-index: -1;
+  // moving solid heart underneath empty one
+  position: absolute;
+}
+
+.heartempty {
+  position: absolute;
+  padding-left: 240px;
+  padding-top: 14px;
+  color: gray;
+  font-size: x-large;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  &:hover {
+    .heartsolid {
+      display: visible;
+      z-index: 1;
     }
   }
 }
@@ -207,4 +221,9 @@
 
 .footer {
   @include footer;
+}
+
+// The Full Palette page
+.menuboxfullpalette {
+  @include menubox;
 }

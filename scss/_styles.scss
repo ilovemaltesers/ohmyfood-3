@@ -80,14 +80,7 @@
 // heart animation
 
 @keyframes heartfill {
-  0% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #cb057f;
-  }
 }
-
 // footer
 
 @mixin footer {
@@ -122,4 +115,13 @@
     color: white;
     text-decoration: none;
   }
+}
+// Menubox
+
+@mixin menubox {
+  width: 100%;
+  height: auto;
+  background-color: lightgrey;
+  border-radius-top: 30px;
+  z-index: 0;
 }
