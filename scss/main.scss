@@ -219,7 +219,24 @@
 }
 
 // The FULL PALETTE page
+.pagecontainer {
+  width: 100%;
+  position: relative;
+}
+
+.imgfullpalette {
+  z-index: 1;
+  position: absolute;
+}
 
 .menuboxfullpalette {
   @include menubox;
+  z-index: 2;
+  position: absolute;
+  top: 232px;
 }
+
+.fullpaletteheading {
+  font-family: $heading-font;
+  font-size: 700;
+

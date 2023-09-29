@@ -281,7 +281,7 @@ body {
 
 .heartsolid {
   background-color: transparent;
-  color: linear-gradient(to right, #9356dc, #ff79da);
+  color: linear-gradient(to top, #9356dc, #ff79da);
   padding-left: 240px;
   top: -33px;
   font-size: x-large;
@@ -291,7 +291,6 @@ body {
 .footer .footerbox {
   background-color: rgb(91, 89, 89);
   color: white;
-  margin-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -318,10 +317,31 @@ body {
   text-decoration: none;
 }
 
+.pagecontainer {
+  width: 100%;
+  position: relative;
+}
+
+.imgfullpalette {
+  z-index: 1;
+  position: absolute;
+}
+
 .menuboxfullpalette {
   width: 100%;
   height: auto;
-  background-color: lightgrey;
-  border-radius-top: 30px;
-  z-index: 0;
+  background-color: rgb(232, 234, 239);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index: 2;
+  position: absolute;
+  top: 232px;
+}
+
+.fullpaletteheading {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 400;
 }/*# sourceMappingURL=main.css.map */

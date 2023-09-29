@@ -142,7 +142,10 @@
 @mixin menubox {
   width: 100%;
   height: auto;
-  background-color: lightgrey;
-  border-radius-top: 30px;
-  z-index: 0;
+  background-color: rgb(232, 234, 239);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
