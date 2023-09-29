@@ -206,14 +206,13 @@
 }
 
 .heartsolid {
+  background-color: transparent;
+  color: linear-gradient(to top, $primary-color, $secondary-color);
   padding-left: 240px;
   top: -33px;
   font-size: x-large;
   position: absolute;
-  color: rgb(249, 4, 115);
 }
-
-// footer
 
 .footer {
   @include footer;

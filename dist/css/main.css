@@ -280,11 +280,12 @@ body {
 }
 
 .heartsolid {
+  background-color: transparent;
+  color: linear-gradient(to right, #9356dc, #ff79da);
   padding-left: 240px;
   top: -33px;
   font-size: x-large;
   position: absolute;
-  color: rgb(249, 4, 115);
 }
 
 .footer .footerbox {
