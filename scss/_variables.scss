@@ -26,26 +26,27 @@ $font-weights: (
 $breakpoints: (
   "phone": 360px,
   "tablet": 768px,
-  "desktop": 1366px,
-  "LGdesktop": 1920px,
+  "desktop": 1024px,
+  "LGdesktop": 1200px,
 );
 
-@mixin phonepb {
+@mixin phonebp {
   @media (min-width: map-get($breakpoints, "phone")) {
     @content;
   }
 }
-@mixin tabletpb {
+
+@mixin tabletbp {
   @media (min-width: map-get($breakpoints, "tablet")) {
     @content;
   }
 }
-@mixin desktoppb {
+@mixin desktopbp {
   @media (min-width: map-get($breakpoints, "desktop")) {
     @content;
   }
 }
-@mixin LGdesktoppb {
+@mixin LGdesktopbp {
   @media (min-width: map-get($breakpoints, "LGdesktop")) {
     @content;
   }

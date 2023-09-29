@@ -8,10 +8,26 @@
   color: black;
   text-align: center;
   padding-top: 30px;
+  position: relative;
   .arrowicon {
     position: absolute;
-    right: 335px;
-    bottom: 11px;
+    color: black;
+
+    @include phonebp {
+      bottom: 11px;
+      left: 16px;
+    }
+    @include tabletbp {
+      bottom: 16px;
+    }
+    @include desktopbp {
+      left: 25px;
+      bottom: 16px;
+    }
+    @include LGdesktopbp {
+      left: 20px;
+      bottom: 16px;
+    }
   }
 }
 
@@ -80,6 +96,12 @@
 // heart animation
 
 @keyframes heartfill {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background: linear-gradient(to bottom, #ff6b91, #cb057f);
+  }
 }
 // footer
 

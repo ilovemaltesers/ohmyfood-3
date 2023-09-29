@@ -8,7 +8,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@keyframes heartfill {}
+@keyframes heartfill {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background: linear-gradient(to bottom, #ff6b91, #cb057f);
+  }
+}
 .headerbox {
   width: 100%;
   height: 70px;
@@ -17,14 +24,37 @@ body {
   color: black;
   text-align: center;
   padding-top: 30px;
+  position: relative;
   box-shadow: 0px 0px 10px 0px black;
   text-align: center;
   position: relative;
 }
 .headerbox .arrowicon {
   position: absolute;
-  right: 335px;
-  bottom: 11px;
+  color: black;
+}
+@media (min-width: 360px) {
+  .headerbox .arrowicon {
+    bottom: 11px;
+    left: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .headerbox .arrowicon {
+    bottom: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .headerbox .arrowicon {
+    left: 25px;
+    bottom: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .headerbox .arrowicon {
+    left: 20px;
+    bottom: 16px;
+  }
 }
 
 .navigationbox {
@@ -234,28 +264,27 @@ body {
   font-weight: 200;
 }
 
-.heartsolid {
-  display: hidden;
-  padding-left: 240px;
-  padding-top: 14px;
-  color: linear-gradient(to bottom, #ff6b91, #cb057f);
-  font-size: x-large;
-  z-index: -1;
-  position: absolute;
+.heart-icon {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
 
 .heartempty {
   position: absolute;
   padding-left: 240px;
-  padding-top: 14px;
-  color: gray;
+  top: -33px;
   font-size: x-large;
-  background-color: transparent;
-  transition: background-color 0.5s ease;
+  color: rgb(155, 155, 155);
 }
-.heartempty:hover .heartsolid {
-  display: visible;
-  z-index: 1;
+
+.heartsolid {
+  padding-left: 240px;
+  top: -33px;
+  font-size: x-large;
+  position: absolute;
+  color: rgb(249, 4, 115);
 }
 
 .footer .footerbox {
