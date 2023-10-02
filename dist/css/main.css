@@ -227,7 +227,7 @@ body {
   font-style: bold;
 }
 
-.imgfullpalette {
+.imgfullpalette1 {
   -o-object-position: 0px -45px;
      object-position: 0px -45px;
 }
@@ -326,7 +326,7 @@ body {
   position: relative;
 }
 
-.imgfullpalette {
+.imgfullpalette2 {
   z-index: -1;
   position: absolute;
 }
@@ -341,8 +341,8 @@ body {
   padding-left: 1em;
   padding-right: 1em;
   z-index: 2;
-  position: absolute;
-  top: 160px;
+  margin-top: 160px;
+  padding-bottom: 2em;
 }
 
 .fullpaletteheading {
@@ -412,4 +412,33 @@ body {
 .orderbutton:active {
   background: #c69ff5;
   background-color: #e2cdfa;
+}
+
+.footerfullpalette .footerbox {
+  background-color: rgb(91, 89, 89);
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.footerfullpalette .footertitle {
+  font-family: "Shrikhand", sans-serif;
+  padding-top: 1em;
+}
+.footerfullpalette .footerlist {
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.footerfullpalette .utensils {
+  color: white;
+}
+.footerfullpalette .handshake {
+  color: white;
+}
+.footerfullpalette .suggest {
+  padding-left: 5px;
+}
+.footerfullpalette .footerlink {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

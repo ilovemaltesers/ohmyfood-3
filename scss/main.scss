@@ -156,7 +156,7 @@
   bottom: 10.5em;
 }
 
-.imgfullpalette {
+.imgfullpalette1 {
   object-position: 0px -45px;
 }
 
@@ -229,7 +229,7 @@
   position: relative;
 }
 
-.imgfullpalette {
+.imgfullpalette2 {
   z-index: -1;
   position: absolute;
 }
@@ -237,8 +237,8 @@
 .menuboxfullpalette {
   @include menubox;
   z-index: 2;
-  position: absolute;
-  top: 160px;
+  margin-top: 160px;
+  padding-bottom: 2em;
 }
 
 .fullpaletteheading {
@@ -249,9 +249,6 @@
 .entrees {
   margin-top: 1em;
   font-weight: map-get($font-weights, xsmall);
-}
-
-.uppermenuwrap {
 }
 
 .whitebox {
@@ -282,8 +279,11 @@
 
 .orderbutton {
   @include purplebtn;
-
   margin-top: 10em;
   display: block;
   margin: 3em auto auto;
+}
+
+.footerfullpalette {
+  @include footer;
 }
