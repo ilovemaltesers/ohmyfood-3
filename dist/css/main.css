@@ -8,6 +8,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 @keyframes heartfill {
   0% {
     background-color: transparent;
@@ -257,11 +261,13 @@ body {
 .resttextwrap .restname {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  color: black;
 }
 .resttextwrap .newyork {
   padding-top: 0.5em;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
+  color: black;
 }
 
 .heart-icon {
@@ -343,6 +349,22 @@ body {
   z-index: 2;
   margin-top: 160px;
   padding-bottom: 2em;
+  margin-top: 195px;
+}
+@media (min-width: 768px) {
+  .menuboxfullpalette {
+    margin-top: 375px;
+  }
+}
+@media (min-width: 1024px) {
+  .menuboxfullpalette {
+    margin-top: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .menuboxfullpalette {
+    margin-top: 650px;
+  }
 }
 
 .fullpaletteheading {

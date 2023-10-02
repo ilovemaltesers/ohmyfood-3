@@ -182,11 +182,13 @@
   .restname {
     font-family: $primary-font;
     font-weight: map-get($font-weights, medium);
+    color: black;
   }
   .newyork {
     padding-top: 0.5em;
     font-family: $primary-font;
     font-weight: map-get($font-weights, xsmall);
+    color: black;
   }
 }
 
@@ -239,6 +241,16 @@
   z-index: 2;
   margin-top: 160px;
   padding-bottom: 2em;
+  margin-top: 195px;
+  @include tabletbp {
+    margin-top: 375px;
+  }
+  @include desktopbp {
+    margin-top: 500px;
+  }
+  @include LGdesktopbp {
+    margin-top: 650px;
+  }
 }
 
 .fullpaletteheading {
