@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: 70px;
   font-family: "Shrikhand", sans-serif;
-  font-size: x-large;
+  font-size: 25px;
   color: black;
   text-align: center;
   padding-top: 30px;
@@ -317,20 +317,24 @@ body {
   text-decoration: none;
 }
 
+.headerbox {
+  padding-bottom: 1em;
+}
+
 .pagecontainer {
   width: 100%;
   position: relative;
 }
 
 .imgfullpalette {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
 }
 
 .menuboxfullpalette {
   width: 100%;
   height: auto;
-  background-color: rgb(232, 234, 239);
+  background-color: rgb(241, 242, 243);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding-top: 2em;
@@ -338,10 +342,74 @@ body {
   padding-right: 1em;
   z-index: 2;
   position: absolute;
-  top: 232px;
+  top: 160px;
 }
 
 .fullpaletteheading {
   font-family: "Shrikhand", sans-serif;
-  font-size: 400;
+  font-size: 25px;
+}
+
+.entrees {
+  margin-top: 1em;
+  font-weight: 200;
+}
+
+.whitebox {
+  width: 100%;
+  background-color: white;
+  border-radius: 23px;
+  padding: 1em;
+  display: inline-block;
+  margin: 1em auto auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dishname {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.side {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  padding-top: 7px;
+}
+
+.maindish {
+  margin-top: 2em;
+  font-weight: 200;
+}
+
+.desserts {
+  margin-top: 2em;
+  font-weight: 200;
+}
+
+.orderbutton {
+  width: 17em;
+  height: 4em;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-color: #9356dc;
+  border-radius: 39px;
+  color: white;
+  text-align: center;
+  border: hidden;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  margin-top: 10em;
+  display: block;
+  margin: 3em auto auto;
+}
+.orderbutton:hover {
+  background: #c69ff5;
+  background-color: #c69ff5;
+  box-shadow: 0px 4px 6px rgba(48, 44, 44, 0.6);
+}
+.orderbutton:active {
+  background: #c69ff5;
+  background-color: #e2cdfa;
 }/*# sourceMappingURL=main.css.map */

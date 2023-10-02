@@ -21,6 +21,16 @@ $font-weights: (
   extra-bold: 700,
 );
 
+// font-size map
+
+$font-size: (
+  xsmall: 10px,
+  small: 15px,
+  medium: 20px,
+  large: 25px,
+  xlg: 30px,
+);
+
 // breakpoints
 
 $breakpoints: (
