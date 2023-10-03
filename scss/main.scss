@@ -84,7 +84,18 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
+
+  @include desktopbp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @include LGdesktopbp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
   .howbtn {
     @include howbutton;
@@ -218,6 +229,11 @@
 
 .footer {
   @include footer;
+  .footerlink {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 // The FULL PALETTE page
@@ -249,7 +265,7 @@
     margin-top: 500px;
   }
   @include LGdesktopbp {
-    margin-top: 650px;
+    margin-top: 593px;
   }
 }
 
@@ -265,18 +281,26 @@
 
 .whitebox {
   @include whiteboxstyle;
+  display: flex;
+  flex-direction: row;
 }
 
-.dishname {
-  font-family: $primary-font;
-  font-weight: map-get($font-weights, medium);
-  font-size: map-get($font-size, medium);
+.divblock {
+  width: 95%;
 }
+
 .side {
   font-family: $primary-font;
   font-weight: map-get($font-weights, xsmall);
   font-size: map-get($font-size, small);
   padding-top: 7px;
+}
+
+.price {
+  padding-top: 2%;
+  @include LGdesktopbp {
+    padding-top: 1%;
+  }
 }
 
 .maindish {

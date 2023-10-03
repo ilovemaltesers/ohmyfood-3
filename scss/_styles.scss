@@ -12,6 +12,9 @@
   .arrowicon {
     position: absolute;
     color: black;
+    :hover {
+      cursor: pointer;
+    }
 
     @include phonebp {
       bottom: 11px;
