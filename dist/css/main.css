@@ -20,6 +20,16 @@ a {
     background: linear-gradient(to bottom, #ff6b91, #cb057f);
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .headerbox {
   width: 100%;
   height: 70px;
@@ -392,6 +402,16 @@ a {
   font-size: 25px;
 }
 
+.uppermenuwrap .whitebox:nth-child(1) {
+  animation: fadein 0.5s ease forwards;
+}
+.uppermenuwrap .whitebox:nth-child(2) {
+  animation: fadein 1s ease forwards;
+}
+.uppermenuwrap .whitebox:nth-child(3) {
+  animation: fadein 1.5s ease forwards;
+}
+
 .entrees {
   margin-top: 1em;
   font-weight: 200;
@@ -421,7 +441,12 @@ a {
 }
 
 .price {
-  padding-top: 2%;
+  padding-top: 5%;
+}
+@media (min-width: 768px) {
+  .price {
+    padding-top: 2%;
+  }
 }
 @media (min-width: 1200px) {
   .price {
@@ -434,9 +459,29 @@ a {
   font-weight: 200;
 }
 
+.middlemenuwrap .whitebox:nth-child(1) {
+  animation: fadein 2s ease forwards;
+}
+.middlemenuwrap .whitebox:nth-child(2) {
+  animation: fadein 2.5s ease forwards;
+}
+.middlemenuwrap .whitebox:nth-child(3) {
+  animation: fadein 3s ease forwards;
+}
+
 .desserts {
   margin-top: 2em;
   font-weight: 200;
+}
+
+.dessertswrap .whitebox:nth-child(1) {
+  animation: fadein 3.5s ease forwards;
+}
+.dessertswrap .whitebox:nth-child(2) {
+  animation: fadein 4s ease forwards;
+}
+.dessertswrap .whitebox:nth-child(3) {
+  animation: fadein 4.5s ease forwards;
 }
 
 .orderbutton {
@@ -465,31 +510,34 @@ a {
   background-color: #e2cdfa;
 }
 
-.footerfullpalette .footerbox {
+.footer {
+  margin-top: 2em;
+}
+.footer .footerbox {
   background-color: rgb(91, 89, 89);
   color: white;
   padding-left: 2em;
   padding-right: 2em;
 }
-.footerfullpalette .footertitle {
+.footer .footertitle {
   font-family: "Shrikhand", sans-serif;
   padding-top: 1em;
 }
-.footerfullpalette .footerlist {
+.footer .footerlist {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.footerfullpalette .utensils {
+.footer .utensils {
   color: white;
 }
-.footerfullpalette .handshake {
+.footer .handshake {
   color: white;
 }
-.footerfullpalette .suggest {
+.footer .suggest {
   padding-left: 5px;
 }
-.footerfullpalette .footerlink {
+.footer .footerlink {
   color: white;
   text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

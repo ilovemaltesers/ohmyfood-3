@@ -274,6 +274,20 @@
   font-size: map-get($font-size, large);
 }
 
+.uppermenuwrap .whitebox {
+  &:nth-child(1) {
+    animation: fadein 0.5s ease forwards;
+  }
+
+  &:nth-child(2) {
+    animation: fadein 1s ease forwards;
+  }
+
+  &:nth-child(3) {
+    animation: fadein 1.5s ease forwards;
+  }
+}
+
 .entrees {
   margin-top: 1em;
   font-weight: map-get($font-weights, xsmall);
@@ -297,7 +311,11 @@
 }
 
 .price {
-  padding-top: 2%;
+  padding-top: 5%;
+
+  @include tabletbp {
+    padding-top: 2%;
+  }
   @include LGdesktopbp {
     padding-top: 1%;
   }
@@ -308,9 +326,37 @@
   font-weight: map-get($font-weights, xsmall);
 }
 
+.middlemenuwrap .whitebox {
+  &:nth-child(1) {
+    animation: fadein 2s ease forwards;
+  }
+
+  &:nth-child(2) {
+    animation: fadein 2.5s ease forwards;
+  }
+
+  &:nth-child(3) {
+    animation: fadein 3s ease forwards;
+  }
+}
+
 .desserts {
   margin-top: 2em;
   font-weight: map-get($font-weights, xsmall);
+}
+
+.dessertswrap .whitebox {
+  &:nth-child(1) {
+    animation: fadein 3.5s ease forwards;
+  }
+
+  &:nth-child(2) {
+    animation: fadein 4s ease forwards;
+  }
+
+  &:nth-child(3) {
+    animation: fadein 4.5s ease forwards;
+  }
 }
 
 .orderbutton {
@@ -320,6 +366,7 @@
   margin: 3em auto auto;
 }
 
-.footerfullpalette {
+.footer {
+  margin-top: 2em;
   @include footer;
 }
