@@ -74,6 +74,12 @@
     font-weight: map-get($font-weights, medium);
     margin-left: 1.5em;
     margin-top: 1em;
+    @include desktopbp {
+      padding-left: 23.5em;
+    }
+    @include LGdesktopbp {
+      padding-left: 27.5em;
+    }
   }
 }
 
@@ -118,13 +124,23 @@
   width: 100%;
   background-color: $greytonelgt;
   margin-top: 2em;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
+  @include desktopbp {
+    padding-left: 15em;
+    padding-right: 15em;
+  }
 
   .restaurantstitle {
     font-family: $primary-font;
     font-weight: map-get($font-weights, medium);
     margin-left: 1.5em;
     padding-top: 2em;
+    @include desktopbp {
+      padding-left: 11em;
+    }
+    @include LGdesktopbp {
+      padding-left: 15em;
+    }
   }
 
   .restaurantflexbox {
@@ -175,6 +191,12 @@
   position: absolute;
   left: 13em;
   bottom: 10.5em;
+  @include desktopbp {
+    left: 10em;
+  }
+  @include LGdesktopbp {
+    left: 13em;
+  }
 }
 
 .imgfullpalette1 {

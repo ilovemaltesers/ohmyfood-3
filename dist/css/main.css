@@ -156,6 +156,16 @@ a {
   margin-left: 1.5em;
   margin-top: 1em;
 }
+@media (min-width: 1024px) {
+  .howbox .howitworkstitle {
+    padding-left: 23.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .howbox .howitworkstitle {
+    padding-left: 27.5em;
+  }
+}
 
 .howbtnflexbox {
   height: 40vh;
@@ -207,13 +217,29 @@ a {
   width: 100%;
   background-color: rgb(241, 242, 243);
   margin-top: 2em;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
+}
+@media (min-width: 1024px) {
+  .restaurantsbox {
+    padding-left: 15em;
+    padding-right: 15em;
+  }
 }
 .restaurantsbox .restaurantstitle {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-left: 1.5em;
   padding-top: 2em;
+}
+@media (min-width: 1024px) {
+  .restaurantsbox .restaurantstitle {
+    padding-left: 11em;
+  }
+}
+@media (min-width: 1200px) {
+  .restaurantsbox .restaurantstitle {
+    padding-left: 15em;
+  }
 }
 .restaurantsbox .restaurantflexbox {
   width: 100%;
@@ -275,6 +301,16 @@ a {
   padding-top: 6px;
   font-family: "Roboto", sans-serif;
   font-style: bold;
+}
+@media (min-width: 1024px) {
+  .newbutton {
+    left: 10em;
+  }
+}
+@media (min-width: 1200px) {
+  .newbutton {
+    left: 13em;
+  }
 }
 
 .imgfullpalette1 {
