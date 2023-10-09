@@ -133,6 +133,15 @@
     align-items: center;
     gap: 2em;
     margin-top: 2em;
+
+    @include desktopbp {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+    }
   }
 
   .restcard {
@@ -203,26 +212,52 @@
     color: black;
   }
 }
-
-.heart-icon {
-  padding-top: 8%;
-
-  position: relative;
-}
-
 .lowerthird {
   display: flex;
   flex-direction: row;
 }
 
+.heart-icon {
+  padding-top: 9%;
+  padding-left: 3%;
+  position: relative;
+  cursor: pointer;
+}
+
 .heartempty {
+  cursor: pointer;
   font-size: x-large;
   position: absolute;
+  color: gray;
+  background-color: white;
+  &:hover {
+    animation: heartfade 0.5s forwards;
+    z-index: 1;
+  }
+  &:checked {
+    animation: heartfade 0.5s forwards;
+    z-index: 1;
+  }
 }
 
 .heartsolid {
   font-size: x-large;
   position: absolute;
+  background-color: transparent;
+  background-image: linear-gradient(to top, $primary-color, $secondary-color);
+  -webkit-background-clip: text; /* For webkit-based browsers (Safari, Chrome) */
+  background-clip: text;
+  color: transparent; /* Make the text transparent */
+  display: inline-block; /* This is necessary to apply the gradient to the text */
+
+  &:hover {
+    animation: heartfill 3s forwards;
+    z-index: -1;
+  }
+  &:checked {
+    animation: heartfade 5s forwards;
+    z-index: 1;
+  }
 }
 
 .footer {

@@ -14,10 +14,18 @@ a {
 
 @keyframes heartfill {
   0% {
-    background-color: transparent;
+    opacity: 0;
   }
   100% {
-    background: linear-gradient(to bottom, #ff6b91, #cb057f);
+    opacity: 1;
+  }
+}
+@keyframes heartfade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes fadein {
@@ -214,6 +222,16 @@ a {
   gap: 2em;
   margin-top: 2em;
 }
+@media (min-width: 1024px) {
+  .restaurantsbox .restaurantflexbox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
 .restaurantsbox .restcard {
   max-width: 300px;
   height: 220px;
@@ -298,24 +316,51 @@ a {
   color: black;
 }
 
-.heart-icon {
-  padding-top: 8%;
-  position: relative;
-}
-
 .lowerthird {
   display: flex;
   flex-direction: row;
 }
 
+.heart-icon {
+  padding-top: 9%;
+  padding-left: 3%;
+  position: relative;
+  cursor: pointer;
+}
+
 .heartempty {
+  cursor: pointer;
   font-size: x-large;
   position: absolute;
+  color: gray;
+  background-color: white;
+}
+.heartempty:hover {
+  animation: heartfade 0.5s forwards;
+  z-index: 1;
+}
+.heartempty:checked {
+  animation: heartfade 0.5s forwards;
+  z-index: 1;
 }
 
 .heartsolid {
   font-size: x-large;
   position: absolute;
+  background-color: transparent;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  -webkit-background-clip: text; /* For webkit-based browsers (Safari, Chrome) */
+  background-clip: text;
+  color: transparent; /* Make the text transparent */
+  display: inline-block; /* This is necessary to apply the gradient to the text */
+}
+.heartsolid:hover {
+  animation: heartfill 3s forwards;
+  z-index: -1;
+}
+.heartsolid:checked {
+  animation: heartfade 5s forwards;
+  z-index: 1;
 }
 
 .footer .footerbox {

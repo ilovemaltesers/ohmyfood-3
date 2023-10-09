@@ -97,14 +97,23 @@
   }
 }
 
-// heart animation
+// heart animations
 
 @keyframes heartfill {
   0% {
-    background-color: transparent;
+    opacity: 0;
   }
   100% {
-    background: linear-gradient(to bottom, #ff6b91, #cb057f);
+    opacity: 1;
+  }
+}
+
+@keyframes heartfade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
