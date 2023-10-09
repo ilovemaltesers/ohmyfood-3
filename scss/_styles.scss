@@ -47,9 +47,10 @@
   border: hidden;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  transition: background-color 3s ease;
+  transition: background-color 2s ease;
 
   &:hover {
+    cursor: pointer;
     background: linear-gradient(to bottom, $secondary-color, $lightened-color);
     background-color: $lightened-color;
     box-shadow: 0px 4px 6px rgba(48, 44, 44, 1);

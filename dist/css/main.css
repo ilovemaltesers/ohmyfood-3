@@ -131,11 +131,12 @@ a {
   border: hidden;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  transition: background-color 3s ease;
+  transition: background-color 2s ease;
   margin-top: 2em;
   margin-bottom: 2em;
 }
 .purplebtn:hover {
+  cursor: pointer;
   background: linear-gradient(to bottom, #ff79da, #c9abee);
   background-color: #c9abee;
   box-shadow: 0px 4px 6px rgb(48, 44, 44);
@@ -159,12 +160,7 @@ a {
 }
 @media (min-width: 1024px) {
   .howbox .howitworkstitle {
-    padding-left: 23.5em;
-  }
-}
-@media (min-width: 1200px) {
-  .howbox .howitworkstitle {
-    padding-left: 27.5em;
+    padding-left: 43%;
   }
 }
 
@@ -234,12 +230,7 @@ a {
 }
 @media (min-width: 1024px) {
   .restaurantsbox .restaurantstitle {
-    padding-left: 11em;
-  }
-}
-@media (min-width: 1200px) {
-  .restaurantsbox .restaurantstitle {
-    padding-left: 15em;
+    padding-left: 40%;
   }
 }
 .restaurantsbox .restaurantflexbox {
@@ -575,12 +566,13 @@ a {
   border: hidden;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  transition: background-color 3s ease;
+  transition: background-color 2s ease;
   margin-top: 10em;
   display: block;
   margin: 3em auto auto;
 }
 .orderbutton:hover {
+  cursor: pointer;
   background: linear-gradient(to bottom, #ff79da, #c9abee);
   background-color: #c9abee;
   box-shadow: 0px 4px 6px rgb(48, 44, 44);

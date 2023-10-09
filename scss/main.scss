@@ -75,10 +75,7 @@
     margin-left: 1.5em;
     margin-top: 1em;
     @include desktopbp {
-      padding-left: 23.5em;
-    }
-    @include LGdesktopbp {
-      padding-left: 27.5em;
+      padding-left: 43%;
     }
   }
 }
@@ -136,10 +133,7 @@
     margin-left: 1.5em;
     padding-top: 2em;
     @include desktopbp {
-      padding-left: 11em;
-    }
-    @include LGdesktopbp {
-      padding-left: 15em;
+      padding-left: 40%;
     }
   }
 
