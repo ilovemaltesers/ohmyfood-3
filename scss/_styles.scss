@@ -1,3 +1,5 @@
+// animation spinner
+
 // header
 
 @mixin basic-header {
@@ -186,5 +188,43 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+// animation spinner
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: $primary-color;
+    border-right-color: $secondary-color;
+    border-bottom-color: $tertiary-color;
+  }
+  33% {
+    transform: rotate(120deg);
+    border-top-color: $secondary-color;
+    border-right-color: $tertiary-color;
+    border-bottom-color: $primary-color;
+  }
+  66% {
+    transform: rotate(240deg);
+    border-top-color: $tertiary-color;
+    border-right-color: $primary-color;
+    border-bottom-color: $secondary-color;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: $primary-color;
+    border-right-color: $secondary-color;
+    border-bottom-color: $tertiary-color;
+  }
+}
+@keyframes spinnerfade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
