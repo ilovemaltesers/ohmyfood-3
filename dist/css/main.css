@@ -553,6 +553,22 @@ a {
 .entrees {
   margin-top: 1em;
   font-weight: 200;
+  display: inline-block;
+  color: black;
+}
+
+.underline-text {
+  position: relative;
+}
+
+.underline-text::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: #99e2d0; /* Specify your desired underline color */
+  bottom: -2px; /* Adjust this value to control the space between the word and underline */
+  left: 0;
 }
 
 .whitebox {

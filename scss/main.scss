@@ -375,6 +375,22 @@
 .entrees {
   margin-top: 1em;
   font-weight: map-get($font-weights, xsmall);
+  display: inline-block;
+  color: black;
+}
+
+.underline-text {
+  position: relative;
+}
+
+.underline-text::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: $tertiary-color; /* Specify your desired underline color */
+  bottom: -2px; /* Adjust this value to control the space between the word and underline */
+  left: 0;
 }
 
 .whitebox {
