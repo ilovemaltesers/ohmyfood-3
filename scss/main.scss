@@ -212,7 +212,12 @@
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  .imgfullpalette2 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
+
 .newbutton {
   @include newbtn;
   z-index: 10;
@@ -393,6 +398,8 @@
   left: 0;
 }
 
+// practice
+
 .whitebox {
   @include whiteboxstyle;
   display: flex;
@@ -468,4 +475,66 @@
 
 .footer {
   @include footer;
+}
+
+// slider animation
+
+.slider {
+  background-color: $tertiary-color;
+  width: 20%; /* Initial width when hidden */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -22%; /* Initially off-screen */
+  transition: right 0.3s ease; /* Animation effect */
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+}
+.tick-icon {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.tick {
+  color: $tertiary-color;
+  animation: rotate 1s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+/* Hover effect for desktop */
+
+.whitebox:hover .slider {
+  @include desktopbp {
+  }
+  right: 0; /* Slide in from the right */
+}
+
+/* Click effect for mobile */
+
+@media (max-width: 767px) {
+  .slider {
+    right: 0; /* Initially visible on mobile */
+    display: none; /* Hide content initially */
+  }
+
+  .whitebox:active .slider {
+    display: block; /* Show content on click */
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
