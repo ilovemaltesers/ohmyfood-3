@@ -109,7 +109,7 @@
     margin-left: 1.5em;
     margin-top: 1em;
     @include desktopbp {
-      padding-left: 43%;
+      text-align: center;
     }
   }
 }
@@ -157,8 +157,9 @@
   margin-top: 2em;
   padding-bottom: 2em;
   @include desktopbp {
-    padding-left: 15em;
-    padding-right: 15em;
+    padding-left: 11em;
+    padding-right: 11em;
+    padding-bottom: 7.5em;
   }
 
   .restaurantstitle {
@@ -167,7 +168,7 @@
     margin-left: 1.5em;
     padding-top: 2em;
     @include desktopbp {
-      padding-left: 40%;
+      text-align: center;
     }
   }
 
@@ -186,6 +187,12 @@
       grid-template-rows: repeat(2, 1fr);
       justify-items: center;
       align-items: center;
+    }
+    @include XLdesktopbp {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 100px;
     }
   }
 

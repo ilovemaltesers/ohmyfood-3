@@ -227,7 +227,7 @@ a {
 }
 @media (min-width: 1024px) {
   .howbox .howitworkstitle {
-    padding-left: 43%;
+    text-align: center;
   }
 }
 
@@ -285,8 +285,9 @@ a {
 }
 @media (min-width: 1024px) {
   .restaurantsbox {
-    padding-left: 15em;
-    padding-right: 15em;
+    padding-left: 11em;
+    padding-right: 11em;
+    padding-bottom: 7.5em;
   }
 }
 .restaurantsbox .restaurantstitle {
@@ -297,7 +298,7 @@ a {
 }
 @media (min-width: 1024px) {
   .restaurantsbox .restaurantstitle {
-    padding-left: 40%;
+    text-align: center;
   }
 }
 .restaurantsbox .restaurantflexbox {
@@ -316,6 +317,14 @@ a {
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+  }
+}
+@media (min-width: 1920px) {
+  .restaurantsbox .restaurantflexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
   }
 }
 .restaurantsbox .restcard {
