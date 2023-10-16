@@ -347,17 +347,18 @@
   position: relative;
 }
 
-.imgfullpalette2 {
+.rest_img {
   z-index: -1;
   position: absolute;
 }
 
-.menuboxfullpalette {
+.menubox_allmenus {
   @include menubox;
   z-index: 2;
   margin-top: 160px;
   padding-bottom: 2em;
   margin-top: 195px;
+  overflow: hidden;
   @include tabletbp {
     margin-top: 375px;
   }
@@ -369,7 +370,7 @@
   }
 }
 
-.fullpaletteheading {
+.all_restaurant_headings {
   font-family: $heading-font;
   font-size: map-get($font-size, large);
 }
@@ -385,6 +386,9 @@
 
   &:nth-child(3) {
     animation: fadein 1.5s ease forwards;
+  }
+  &:nth-child(4) {
+    animation: fadein 2s ease forwards;
   }
 }
 
