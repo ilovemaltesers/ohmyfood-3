@@ -73,6 +73,24 @@ a {
     display: none;
   }
 }
+.whitebox:hover .slider {
+  right: 0; /* Slide in from the right */
+}
+/* mobile  */
+@media (max-width: 767px) {
+  .slider {
+    right: 0; /* Initially visible on mobile */
+    display: none; /* Hide content initially */
+  }
+  .whitebox:active .slider {
+    display: block; /* Show content on click */
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .spinnercontainer {
   position: fixed;
   height: 100%;
@@ -219,6 +237,11 @@ a {
   height: auto;
   background-color: white;
 }
+@media (min-width: 768px) {
+  .howbox {
+    padding-bottom: 2em;
+  }
+}
 .howbox .howitworkstitle {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -325,6 +348,7 @@ a {
     flex-direction: row;
     justify-content: center;
     gap: 100px;
+    padding-top: 4em;
   }
 }
 .restaurantsbox .restcard {
@@ -468,7 +492,7 @@ a {
   z-index: -1;
 }
 .heartsolid:checked {
-  animation: heartfade 5s forwards;
+  animation: heartfill 5s forwards;
   z-index: 1;
 }
 
@@ -579,8 +603,8 @@ a {
   position: absolute;
   width: 50%;
   height: 4px;
-  background-color: #99e2d0; /* Specify your desired underline color */
-  bottom: -2px; /* Adjust this value to control the space between the word and underline */
+  background-color: #99e2d0;
+  bottom: -2px;
   left: 0;
 }
 
@@ -710,12 +734,12 @@ a {
 
 .slider {
   background-color: #99e2d0;
-  width: 20%; /* Initial width when hidden */
+  width: 20%;
   height: 100%;
   position: absolute;
   top: 0;
   right: -22%; /* Initially off-screen */
-  transition: right 0.3s ease; /* Animation effect */
+  transition: right 0.3s ease;
   border-top-right-radius: 23px;
   border-bottom-right-radius: 23px;
   cursor: pointer;
@@ -742,11 +766,11 @@ a {
   animation-fill-mode: forwards;
 }
 
-/* Hover effect for desktop */
+/* slider hover effect for desktop */
 .whitebox:hover .slider {
   right: 0; /* Slide in from the right */
 }
-/* Click effect for mobile */
+/* slider effect for mobile  */
 @media (max-width: 767px) {
   .slider {
     right: 0; /* Initially visible on mobile */

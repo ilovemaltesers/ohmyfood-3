@@ -2,7 +2,7 @@
 @import "./variables";
 @import "./styles";
 
-// spinner
+//loading spinner
 
 .spinnercontainer {
   position: fixed;
@@ -102,6 +102,9 @@
   width: 100%;
   height: auto;
   background-color: white;
+  @include tabletbp {
+    padding-bottom: 2em;
+  }
 
   .howitworkstitle {
     font-family: $primary-font;
@@ -193,6 +196,7 @@
       flex-direction: row;
       justify-content: center;
       gap: 100px;
+      padding-top: 4em;
     }
   }
 
@@ -318,7 +322,7 @@
     z-index: -1;
   }
   &:checked {
-    animation: heartfade 5s forwards;
+    animation: heartfill 5s forwards;
     z-index: 1;
   }
 }
@@ -400,8 +404,8 @@
   position: absolute;
   width: 50%;
   height: 4px;
-  background-color: $tertiary-color; /* Specify your desired underline color */
-  bottom: -2px; /* Adjust this value to control the space between the word and underline */
+  background-color: $tertiary-color;
+  bottom: -2px;
   left: 0;
 }
 
@@ -488,12 +492,12 @@
 
 .slider {
   background-color: $tertiary-color;
-  width: 20%; /* Initial width when hidden */
+  width: 20%;
   height: 100%;
   position: absolute;
   top: 0;
   right: -22%; /* Initially off-screen */
-  transition: right 0.3s ease; /* Animation effect */
+  transition: right 0.3s ease;
   border-top-right-radius: 23px;
   border-bottom-right-radius: 23px;
   cursor: pointer;
@@ -519,7 +523,7 @@
   animation-fill-mode: forwards;
 }
 
-/* Hover effect for desktop */
+/* slider hover effect for desktop */
 
 .whitebox:hover .slider {
   @include desktopbp {
@@ -527,7 +531,7 @@
   right: 0; /* Slide in from the right */
 }
 
-/* Click effect for mobile */
+/* slider effect for mobile  */
 
 @media (max-width: 767px) {
   .slider {

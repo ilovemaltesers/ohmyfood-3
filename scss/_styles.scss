@@ -191,7 +191,7 @@
   }
 }
 
-// animation spinner
+// animation loading spinner
 
 @keyframes spin {
   0% {
@@ -226,5 +226,34 @@
   100% {
     opacity: 0;
     display: none;
+  }
+}
+
+// /* slider green rotating tick animations */
+
+// desktop
+
+.whitebox:hover .slider {
+  @include desktopbp {
+  }
+  right: 0; /* Slide in from the right */
+}
+
+/* mobile  */
+
+@media (max-width: 767px) {
+  .slider {
+    right: 0; /* Initially visible on mobile */
+    display: none; /* Hide content initially */
+  }
+
+  .whitebox:active .slider {
+    display: block; /* Show content on click */
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
 }
