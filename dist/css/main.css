@@ -497,11 +497,11 @@ a {
 .footer .handshake {
   color: white;
 }
-.footer .suggest {
+.footer #suggest {
   padding-left: 5px;
   color: white;
 }
-.footer .become {
+.footer #become {
   color: white;
 }
 .footer .footerlink {
@@ -733,11 +733,11 @@ a {
 .footer .handshake {
   color: white;
 }
-.footer .suggest {
+.footer #suggest {
   padding-left: 5px;
   color: white;
 }
-.footer .become {
+.footer #become {
   color: white;
 }
 .footer .footerlink {
