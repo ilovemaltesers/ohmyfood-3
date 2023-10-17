@@ -360,6 +360,10 @@ a {
   box-shadow: 0px 0px 10px 0px gray;
   position: relative;
 }
+.restaurantsbox .restcard .restcard:hover {
+  box-shadow: 0px 0px 20px 0px gray;
+  transform: scale(1.05);
+}
 .restaurantsbox .imagewrap {
   width: 100%;
   height: 65%;
@@ -373,10 +377,6 @@ a {
      object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-}
-.rest_img .imgfullpalette2 {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .newbutton {
@@ -407,26 +407,6 @@ a {
   .newbutton {
     left: 13em;
   }
-}
-
-.imgfullpalette1 {
-  -o-object-position: 0px -45px;
-     object-position: 0px -45px;
-}
-
-.imgenchanted {
-  -o-object-position: 0px -131px;
-     object-position: 0px -131px;
-}
-
-.imgbastille {
-  -o-object-position: 0px -37px;
-     object-position: 0px -37px;
-}
-
-.imglegourmand {
-  -o-object-position: 0px -41px;
-     object-position: 0px -41px;
 }
 
 .resttextwrap {
@@ -541,9 +521,17 @@ a {
   position: relative;
 }
 
-.rest_img {
+.largeimagebox {
+  position: relative;
+}
+
+.large_img {
   z-index: -1;
   position: absolute;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menubox_allmenus {
@@ -577,9 +565,22 @@ a {
   }
 }
 
+.heading_wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuheart-icon {
+  justify-content: flex-end;
+}
+.menuheart-icon .menuheartempty {
+  background-color: rgb(241, 242, 243);
+}
+
 .all_restaurant_headings {
   font-family: "Shrikhand", sans-serif;
   font-size: 25px;
+  width: 90%;
 }
 
 .uppermenuwrap .whitebox:nth-child(1) {
