@@ -297,7 +297,7 @@ a {
   z-index: 1;
   position: absolute;
   left: -9px;
-  text-align: center;
+  padding-top: 2px;
 }
 
 .restaurantsbox {
