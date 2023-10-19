@@ -288,6 +288,13 @@ a {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   position: relative;
 }
+.howbtnflexbox .howbtn:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
+}
+.howbtnflexbox .howbtn:active {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+  transform: translateY(2px);
+}
 .howbtnflexbox .numberbtn {
   width: 20px;
   height: 20px;
@@ -581,6 +588,11 @@ a {
   font-family: "Shrikhand", sans-serif;
   font-size: 25px;
   width: 90%;
+}
+@media (min-width: 768px) {
+  .all_restaurant_headings {
+    width: 93%;
+  }
 }
 
 .uppermenuwrap .whitebox:nth-child(1) {

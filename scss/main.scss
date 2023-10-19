@@ -379,6 +379,9 @@
   font-family: $heading-font;
   font-size: map-get($font-size, large);
   width: 90%;
+  @include tabletbp {
+    width: 93%;
+  }
 }
 
 .uppermenuwrap .whitebox {
