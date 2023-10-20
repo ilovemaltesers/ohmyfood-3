@@ -18,6 +18,8 @@
   align-items: center;
   z-index: 25;
   animation: spinnerfade 3s ease-in 1.5s forwards;
+  -webkit-animation: spinnerfade 3s ease-in 1.5s forwards;
+  -moz-animation: spinnerfade 3s ease-in 1.5s forwards;
 }
 
 .spinner {
@@ -34,6 +36,9 @@
   top: 30%;
   z-index: 20;
   animation: spin 2s linear infinite, spinnerfade 3s ease-in 1.5s forwards;
+  -webkit-animation: spin 2s linear infinite,
+    spinnerfade 3s ease-in 1.5s forwards;
+  -moz-animation: spin 2s linear infinite, spinnerfade 3s ease-in 1.5s forwards;
 }
 
 // header
@@ -237,12 +242,7 @@
   position: absolute;
   left: 13em;
   bottom: 10.5em;
-  @include desktopbp {
-    left: 10em;
-  }
-  @include LGdesktopbp {
-    left: 13em;
-  }
+  left: 68%;
 }
 
 .resttextwrap {
@@ -298,17 +298,22 @@
   position: absolute;
   background-color: transparent;
   background-image: linear-gradient(to top, $primary-color, $secondary-color);
-  -webkit-background-clip: text; /* For webkit-based browsers (Safari, Chrome) */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   background-clip: text;
   color: transparent; /* Make the text transparent */
-  display: inline-block; /* This is necessary to apply the gradient to the text */
+  display: inline-block; /*necessary to apply the gradient to the text */
 
   &:hover {
     animation: heartfill 3s forwards;
+    -webkit-animation: heartfill 3s forwards;
+    -moz-animation: heartfill 3s forwards;
     z-index: -1;
   }
   &:checked {
     animation: heartfill 5s forwards;
+    -webkit-animation: heartfill 5s forwards;
+    -moz-animation: heartfill 5s forwards;
     z-index: 1;
   }
 }

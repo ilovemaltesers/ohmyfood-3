@@ -9,6 +9,7 @@
   font-size: map-get($font-size, large);
   color: black;
   text-align: center;
+  text-decoration: none;
   padding-top: 30px;
   position: relative;
   .arrowicon {
@@ -236,7 +237,7 @@
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -10;
   }
 }
 
