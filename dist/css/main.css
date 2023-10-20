@@ -298,14 +298,6 @@ a {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
   background-color: #f1d8f6;
 }
-.howbtnflexbox .howbtn:active {
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
-  transform: translateY(2px);
-}
-.howbtnflexbox .howbtn:hover {
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
-  background-color: #f1d8f6;
-}
 .howbtnflexbox .howbtn:hover .how_icons {
   color: #9356dc;
 }
