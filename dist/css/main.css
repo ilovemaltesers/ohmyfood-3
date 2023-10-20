@@ -476,7 +476,7 @@ a {
   animation: heartfill 3s forwards;
   -webkit-animation: heartfill 3s forwards;
   -moz-animation: heartfill 3s forwards;
-  z-index: -1;
+  z-index: 1;
 }
 .heartsolid:checked {
   animation: heartfill 5s forwards;
