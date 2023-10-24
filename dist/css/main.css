@@ -275,6 +275,7 @@ picture source {
   justify-content: space-between;
   text-align: center;
   margin-top: 1em;
+  gap: 7%;
 }
 @media (min-width: 1024px) {
   .howbtnflexbox {
