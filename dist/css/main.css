@@ -555,6 +555,8 @@ picture source {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .menubox_allmenus {
