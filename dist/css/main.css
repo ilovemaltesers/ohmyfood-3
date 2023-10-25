@@ -775,4 +775,58 @@ picture source {
 .footer .footerlink {
   color: white;
   text-decoration: none;
+}
+
+.slider {
+  background-color: #99e2d0;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -22%; /* Initially off-screen */
+  transition: right 0.3s ease;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+}
+
+.tick-icon {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.tick {
+  color: #99e2d0;
+  animation: rotate 1s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+/* slider hover effect for desktop */
+.whitebox:hover .slider {
+  right: 0; /* Slide in from the right */
+}
+/* slider effect for mobile  */
+@media (max-width: 767px) {
+  .slider {
+    right: 0; /* Initially visible on mobile */
+    display: none; /* Hide content initially */
+  }
+  .whitebox:active .slider {
+    display: block; /* Show content on click */
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=main.css.map */
