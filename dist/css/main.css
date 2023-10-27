@@ -147,8 +147,6 @@ picture source {
 
 .tick {
   color: #99e2d0;
-  animation: rotate 1s linear forwards;
-  animation-fill-mode: forwards;
 }
 
 @keyframes rotate {
@@ -159,6 +157,12 @@ picture source {
 .whitebox:hover .slider {
   right: 0; /* Slide in from the right */
 }
+.whitebox:hover .slider .tick {
+  animation: rotate 0.5s linear forwards;
+  -webkit-animation: rotate 0.5s linear forwards;
+  -moz-animation: rotate 0.5s linear forwards;
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);
