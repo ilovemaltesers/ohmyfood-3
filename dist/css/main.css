@@ -693,6 +693,7 @@ picture source {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  position: relative;
 }
 
 .divblock {
