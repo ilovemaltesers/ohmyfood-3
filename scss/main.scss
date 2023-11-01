@@ -284,7 +284,7 @@
   -moz-background-clip: text;
   background-clip: text;
   color: transparent; /* Make the text transparent */
-  display: inline-block; /*necessary to apply the gradient to the text */
+  display: inline-block; /*so I could apply the gradient to the text */
 
   &:hover {
     animation: heartfill 3s forwards;
