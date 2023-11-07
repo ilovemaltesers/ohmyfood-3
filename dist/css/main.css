@@ -52,8 +52,7 @@ picture source {
   top: 30%;
   z-index: 20;
   animation: spin 2s linear infinite, spinnerfade 3s ease-in 1.5s forwards;
-  -webkit-animation: spin 2s linear infinite,
-    spinnerfade 3s ease-in 1.5s forwards;
+  -webkit-animation: spin 2s linear infinite, spinnerfade 3s ease-in 1.5s forwards;
   -moz-animation: spin 2s linear infinite, spinnerfade 3s ease-in 1.5s forwards;
 }
 
@@ -123,12 +122,18 @@ picture source {
   width: 20%;
   height: 100%;
   position: absolute;
-  top: 0;
-  right: -22%; /* Initially off-screen */
-  transition: right 0.3s ease;
   border-top-right-radius: 23px;
   border-bottom-right-radius: 23px;
   cursor: pointer;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
 }
 
 .tick-icon {
@@ -437,7 +442,7 @@ picture source {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -460,6 +465,7 @@ picture source {
 .newbutton .newbuttontxt {
   padding-top: 6px;
   font-family: "Roboto", sans-serif;
+  font-style: bold;
 }
 
 .resttextwrap {
@@ -589,7 +595,7 @@ picture source {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -691,13 +697,34 @@ picture source {
   margin: 1em auto auto;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: row;
   overflow: hidden;
   position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+}
+.whitebox:hover .slider {
+  transform: translateX(0);
+}
+.whitebox:hover .menu_content {
+  margin-right: 30%;
+}
+
+.menu_content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  transition: margin-right 0.5s ease-in-out;
 }
 
 .divblock {
-  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  flex-grow: 1;
+  width: 50%;
 }
 
 .side {
@@ -705,10 +732,20 @@ picture source {
   font-weight: 200;
   font-size: 15px;
   padding-top: 7px;
+  max-width: 310px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price {
   padding-top: 5%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .price {
@@ -810,4 +847,4 @@ picture source {
 .footer .footerlink {
   color: white;
   text-decoration: none;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

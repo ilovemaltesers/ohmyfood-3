@@ -280,12 +280,19 @@
   width: 20%;
   height: 100%;
   position: absolute;
-  top: 0;
-  right: -22%; /* Initially off-screen */
-  transition: right 0.3s ease;
+
   border-top-right-radius: 23px;
   border-bottom-right-radius: 23px;
   cursor: pointer;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
 }
 
 .tick-icon {
