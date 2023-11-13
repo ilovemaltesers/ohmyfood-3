@@ -88,7 +88,7 @@
 }
 
 .howbtnflexbox {
-  height: 60vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -432,6 +432,7 @@
 }
 
 .menu_content {
+  width: 70%;
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -443,20 +444,25 @@
   flex-direction: column;
   margin-right: 10px;
   flex-grow: 1;
-  width: 100%;
+  width: 50%;
+  .dishname {
+    font-weight: map-get($font-weights, large);
+    font-size: map-get($font-size, small);
+    font-style: $primary-font;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 .side {
   font-family: $primary-font;
   font-weight: map-get($font-weights, xsmall);
-  font-size: map-get($font-size, xsmall);
+  font-size: map-get($font-size, xxsmall);
   padding-top: 7px;
-  &:hover {
-    max-width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .price {

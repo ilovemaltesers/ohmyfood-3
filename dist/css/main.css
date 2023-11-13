@@ -308,7 +308,7 @@ picture source {
 }
 
 .howbtnflexbox {
-  height: 60vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -713,6 +713,7 @@ picture source {
 }
 
 .menu_content {
+  width: 70%;
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -724,19 +725,23 @@ picture source {
   flex-direction: column;
   margin-right: 10px;
   flex-grow: 1;
-  width: 100%;
+  width: 50%;
+}
+.divblock .dishname {
+  font-size: 15px;
+  font-style: "Roboto", sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .side {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  font-size: 12px;
+  font-size: 10px;
   padding-top: 7px;
-}
-.side:hover {
-  max-width: 200px;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
