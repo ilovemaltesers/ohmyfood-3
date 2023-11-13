@@ -724,7 +724,7 @@ picture source {
   flex-direction: column;
   margin-right: 10px;
   flex-grow: 1;
-  width: 50%;
+  width: 100%;
 }
 
 .side {
@@ -732,6 +732,8 @@ picture source {
   font-weight: 200;
   font-size: 15px;
   padding-top: 7px;
+}
+.side:hover {
   max-width: 200px;
   white-space: nowrap;
   overflow: hidden;

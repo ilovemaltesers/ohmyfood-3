@@ -443,7 +443,7 @@
   flex-direction: column;
   margin-right: 10px;
   flex-grow: 1;
-  width: 50%;
+  width: 100%;
 }
 
 .side {
@@ -451,10 +451,12 @@
   font-weight: map-get($font-weights, xsmall);
   font-size: map-get($font-size, small);
   padding-top: 7px;
-  max-width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  &:hover {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .price {
