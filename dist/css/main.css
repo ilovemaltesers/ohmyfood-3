@@ -243,7 +243,7 @@ picture source {
   height: auto;
   text-align: center;
   padding: 1em;
-  background-color: rgb(241, 242, 243);
+  background-color: rgb(245, 247, 247);
 }
 .presentationbox .bookmenu {
   font-family: "Roboto", sans-serif;
@@ -337,7 +337,7 @@ picture source {
   width: 20em;
   height: 5em;
   border-radius: 20px;
-  background-color: rgb(241, 242, 243);
+  background-color: rgb(245, 247, 247);
   border: hidden;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
@@ -371,7 +371,7 @@ picture source {
 
 .restaurantsbox {
   width: 100%;
-  background-color: rgb(241, 242, 243);
+  background-color: rgb(245, 247, 247);
   margin-top: 2em;
   padding-bottom: 2em;
 }
