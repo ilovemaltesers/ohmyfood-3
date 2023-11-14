@@ -53,6 +53,7 @@
   .discover {
     font-family: $primary-font;
     font-weight: map-get($font-weights, xsmall);
+    font-size: map-get($font-size, sm_to_med);
     text-align: center;
     padding: 1em 1em 0 1em;
   }

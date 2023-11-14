@@ -253,6 +253,7 @@ picture source {
 .presentationbox .discover {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
+  font-size: 17px;
   text-align: center;
   padding: 1em 1em 0 1em;
 }
