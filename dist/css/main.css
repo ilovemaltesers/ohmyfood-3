@@ -336,7 +336,7 @@ picture source {
 .howbtnflexbox .howbtn {
   width: 20em;
   height: 5em;
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: rgb(241, 242, 243);
   border: hidden;
   cursor: pointer;
