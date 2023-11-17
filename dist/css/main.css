@@ -52,7 +52,8 @@ picture source {
   top: 30%;
   z-index: 20;
   animation: spin 2s linear infinite, spinnerfade 3s ease-in 1.5s forwards;
-  -webkit-animation: spin 2s linear infinite, spinnerfade 3s ease-in 1.5s forwards;
+  -webkit-animation: spin 2s linear infinite,
+    spinnerfade 3s ease-in 1.5s forwards;
   -moz-animation: spin 2s linear infinite, spinnerfade 3s ease-in 1.5s forwards;
 }
 
@@ -443,7 +444,7 @@ picture source {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -466,7 +467,7 @@ picture source {
 .newbutton .newbuttontxt {
   padding-top: 6px;
   font-family: "Roboto", sans-serif;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .resttextwrap {
@@ -596,7 +597,7 @@ picture source {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -730,7 +731,7 @@ picture source {
 }
 .divblock .dishname {
   font-size: 15px;
-  font-style: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -855,4 +856,4 @@ picture source {
 .footer .footerlink {
   color: white;
   text-decoration: none;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
