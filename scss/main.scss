@@ -113,6 +113,9 @@
   .howbtn {
     @include howbutton;
     position: relative;
+    .how_icons {
+      padding-right: 5%;
+    }
 
     &:hover {
       box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
