@@ -452,7 +452,7 @@
   .dishname {
     font-weight: map-get($font-weights, large);
     font-size: map-get($font-size, small);
-    font-style: $primary-font;
+    font-family: $primary-font;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

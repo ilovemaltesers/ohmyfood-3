@@ -469,7 +469,7 @@ picture source {
 .newbutton .newbuttontxt {
   padding-top: 6px;
   font-family: "Roboto", sans-serif;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .resttextwrap {
@@ -733,7 +733,7 @@ picture source {
 }
 .divblock .dishname {
   font-size: 15px;
-  font-style: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
